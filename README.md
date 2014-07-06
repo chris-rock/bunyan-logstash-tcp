@@ -90,7 +90,12 @@ log.error('error test');
 
 This module is heavily based on [bunyan-logstash](https://github.com/sheknows/bunyan-logstash) and re-uses parts of [winston-logstash](https://github.com/jaakkos/winston-logstash/blob/master/lib/winston-logstash.js).
 
-Thanks [sheknows](https://github.com/sheknows) and [jaakkos](https://github.com/jaakkos) for their amazing work
+Thanks to
+
+- [sheknows](https://github.com/sheknows)
+- [jaakkos](https://github.com/jaakkos) 
+
+for their amazing work
 
 ## License
 
