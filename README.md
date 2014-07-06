@@ -1,5 +1,7 @@
 # Logstash TCP stream for Bunyan
 
+[![build status](https://secure.travis-ci.org/chris-rock/bunyan-logstash-tcp.png)](http://travis-ci.org/chris-rock/bunyan-logstash-tcp)
+
 A tcp logger for [Logstash](http://logstash.net/docs/1.4.2/inputs/tcp)
 
 ## Configuration options
