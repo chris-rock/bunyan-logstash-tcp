@@ -88,6 +88,23 @@ log.debug('test');
 log.error('error test');
 ```
 
+## Logstash Configuration
+
+Configuration for [Logstash 1.3.3+](http://logstash.net/docs/1.4.2/inputs/tcp):
+
+```javascript
+input {
+  // config for bunyan udp
+  udp {
+      'port' => "9999"
+  }
+  // config for bunyan tcp
+  tcp {
+      'port' => "9998"
+  }
+}
+```
+
 ## Credits
 
 This module is heavily based on [bunyan-logstash](https://github.com/sheknows/bunyan-logstash) and re-uses parts of [winston-logstash](https://github.com/jaakkos/winston-logstash/blob/master/lib/winston-logstash.js).
