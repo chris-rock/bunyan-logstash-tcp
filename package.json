@@ -15,7 +15,8 @@
     "logger"
   ],
   "dependencies": {
-    "bunyan": "~0.23.1"
+    "bunyan": "~0.23.1",
+    "lodash" : "2.4.1"
   },
   "devDependencies": {
     "supertest": "0.10.0",
