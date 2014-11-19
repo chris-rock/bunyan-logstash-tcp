@@ -1,7 +1,7 @@
 {
   "name": "bunyan-logstash-tcp",
   "description": "Logstash TCP plugin for Bunyan",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "repository": "https://github.com/chris-rock/bunyan-logstash-tcp.git",
   "homepage": "https://github.com/chris-rock/bunyan-logstash-tcp",
   "main": "lib/logstash.js",
@@ -16,7 +16,7 @@
   ],
   "dependencies": {
     "bunyan": "~0.23.1",
-    "lodash" : "2.4.1"
+    "lodash": "2.4.1"
   },
   "devDependencies": {
     "supertest": "0.10.0",
