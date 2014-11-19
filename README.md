@@ -8,39 +8,64 @@ A tcp logger for [Logstash](http://logstash.net/docs/1.4.2/inputs/tcp)
 
 <table>
   <tr>
+    <th></th>
+    <th>type</th>
+    <th>default</th>
+    <th>note</th>
+  </tr>
+  <tr>
     <th>level</th>
     <td>string</td>
     <td><code>info</code></td>
+    <td></td>
   </tr>
   <tr>
     <th>server</th>
     <td>string</td>
     <td><code>os.hostname()</code></td>
+    <td></td>
   </tr>
   <tr>
     <th>host</th>
     <td>string</td>
     <td><code>"127.0.0.1"</code></td>
+    <td></td>
   </tr>
   <tr>
     <th>port</th>
     <td>number</td>
     <td><code>9999</code></td>
+    <td></td>
   </tr>
   <tr>
     <th>application</th>
     <td>string</td>
     <td><code>process.title</code></td>
+    <td></td>
   </tr>
   <tr>
     <th>pid</th>
     <td>string</td>
     <td><code>process.pid</code></td>
+    <td></td>
   </tr>
   <tr>
     <th>tags</th>
     <td>array|string[]</td>
     <td><code>["bunyan"]</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>max_connect_retries</th>
+    <td>number</td>
+    <td><code>4</code></td>
+    <td><code>-1</code> for infinite</td>
+  </tr>
+  <tr>
+    <th>max_queued_logs</th>
+    <td>number</td>
+    <td><code>500</code></td>
+    <td><code>0</code> to disable queue when not connected</td>
   </tr>
 </table>
 
