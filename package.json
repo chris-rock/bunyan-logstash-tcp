@@ -15,6 +15,7 @@
     "logger"
   ],
   "dependencies": {
+    "CBuffer": "^0.1.5",
     "bunyan": "~0.23.1",
     "lodash": "2.4.1"
   },
