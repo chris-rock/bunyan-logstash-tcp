@@ -105,6 +105,32 @@ input {
 }
 ```
 
+## Try with logstash locally
+
+ - Download logstash from http://logstash.net/
+ - Unpack it (tar -zxf logstash-1.4.2.tar.gz)
+ - Create a test logstash configuration `logstash.conf`
+
+```code
+input {
+  stdin { 
+    type => "stdin-type"
+  }
+  udp {
+    port => "9999"
+  }
+  tcp {
+    port => "9998"
+  }
+}
+output { 
+  stdout {}
+}
+```
+
+ - Run `bin/logstash agent -f logstash.conf
+ - Run `node example/log.js`
+
 ## Credits
 
 This module is heavily based on [bunyan-logstash](https://github.com/sheknows/bunyan-logstash) and re-uses parts of [winston-logstash](https://github.com/jaakkos/winston-logstash/blob/master/lib/winston-logstash.js).
