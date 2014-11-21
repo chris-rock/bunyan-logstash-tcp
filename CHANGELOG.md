@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.3.2
+
+ - add bunyan as peer dependency
+
 ## 0.3.1
 
  - #7 bugfix additional fields merge (jcharles-d2l)
