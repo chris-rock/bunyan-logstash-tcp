@@ -25,7 +25,8 @@
     "supertest": "0.10.0",
     "should": "~3.3.0",
     "grunt-contrib-jshint": "~0.10.0",
-    "grunt-mocha-test": "~0.10.2"
+    "grunt-mocha-test": "~0.10.2",
+    "bunyan": "1.x"
   },
   "engines": {
     "node": "0.10.x",
