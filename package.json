@@ -16,14 +16,17 @@
   ],
   "dependencies": {
     "CBuffer": "^0.1.5",
-    "bunyan": "~0.23.1",
     "lodash": "2.4.1"
+  },
+  "peerDependencies": {
+    "bunyan": "1.x"
   },
   "devDependencies": {
     "supertest": "0.10.0",
     "should": "~3.3.0",
     "grunt-contrib-jshint": "~0.10.0",
-    "grunt-mocha-test": "~0.10.2"
+    "grunt-mocha-test": "~0.10.2",
+    "bunyan": "1.x"
   },
   "engines": {
     "node": "0.10.x",
