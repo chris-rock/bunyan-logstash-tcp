@@ -14,7 +14,11 @@ var log = bunyan.createLogger({
         stream: bunyantcp.createStream({
             host: '127.0.0.1',
             port: 9998
-        })
+        }).on('connect', function() {
+            console.log('connect to tcp');
+        }).on('close', function() { 
+            console.log("Closed connection to tcp"); 
+        }).on('error', console.log )
     }],
     level: 'debug'
 });
