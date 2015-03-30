@@ -14,7 +14,7 @@ var log = bunyan.createLogger({
         stream: bunyantcp.createStream({
             host: '127.0.0.1',
             port: 9998
-        })
+        }).on('error', console.log)
     }],
     level: 'debug'
 });
