@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.3.4
+
+- #13 Emit connection events 
+
 ## 0.3.3
  
  - add unref (@see http://nodejs.org/api/net.html#net_server_unref) by (liukun)
