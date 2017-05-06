@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.0.0
+
+- Drop Node 0.x support
+
 ## 0.3.4
 
 - #13 Emit connection events 
