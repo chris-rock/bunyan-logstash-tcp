@@ -6,43 +6,14 @@ A tcp logger for [Logstash](http://logstash.net/docs/1.4.2/inputs/tcp)
 
 ## Configuration options
 
-<table>
-  <tr>
-    <th>level</th>
-    <td>string</td>
-    <td><code>info</code></td>
-  </tr>
-  <tr>
-    <th>server</th>
-    <td>string</td>
-    <td><code>os.hostname()</code></td>
-  </tr>
-  <tr>
-    <th>host</th>
-    <td>string</td>
-    <td><code>"127.0.0.1"</code></td>
-  </tr>
-  <tr>
-    <th>port</th>
-    <td>number</td>
-    <td><code>9999</code></td>
-  </tr>
-  <tr>
-    <th>application</th>
-    <td>string</td>
-    <td><code>process.title</code></td>
-  </tr>
-  <tr>
-    <th>pid</th>
-    <td>string</td>
-    <td><code>process.pid</code></td>
-  </tr>
-  <tr>
-    <th>tags</th>
-    <td>array|string[]</td>
-    <td><code>["bunyan"]</code></td>
-  </tr>
-</table>
+| level       | string   | `"info"`        |
+|-------------|----------|-----------------|
+| server      | string   | `os.hostname()` |
+| host        | string   | `"127.0.0.1"`   |
+| port        | number   | `9999`          |
+| application | string   | `process.title` |
+| pid         | string   | `process.pid`   |
+| tags        | string[] | `["bunyan"]`    |
 
 ## Adding the bunyan-logstash stream to Bunyan
 
@@ -139,6 +110,7 @@ Thanks to
 
 - [sheknows](https://github.com/sheknows)
 - [jaakkos](https://github.com/jaakkos) 
+- [Chris Rock](https://github.com/chris-rock/bunyan-logstash-tcp)
 
 for their amazing work
 

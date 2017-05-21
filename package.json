@@ -2,9 +2,9 @@
   "name": "bunyan-logstash-tcp",
   "description": "Logstash TCP plugin for Bunyan",
   "version": "1.0.0",
-  "repository": "https://github.com/chris-rock/bunyan-logstash-tcp.git",
-  "homepage": "https://github.com/chris-rock/bunyan-logstash-tcp",
-  "main": "lib/logstash.js",
+  "repository": "https://github.com/transcovo/bunyan-logstash-tcp",
+  "homepage": "https://github.com/transcovo/bunyan-logstash-tcp",
+  "main": "dist/lib/logstash.js",
   "author": "Christoph Hartmann",
   "license": "MIT",
   "keywords": [
@@ -48,7 +48,8 @@
     "mocha": "mocha --bail src/test",
     "build": "npm run transpile && npm run test-dist",
     "transpile": "babel src -d dist",
-    "test-dist": "mocha --bail dist/test"
+    "test-dist": "mocha --bail dist/test",
+    "prepare": "npm run build"
   },
   "files": [
     "dist"
